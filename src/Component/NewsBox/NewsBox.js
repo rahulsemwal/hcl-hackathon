@@ -69,6 +69,39 @@ class NewsBox extends React.Component{
   //     // this.methods.updateState("updateCounter",this.props.updateCounter)
   //   }
   // }
+  handleBookSubmit(event){debugger;
+     // alert('A name was submitted: ');
+     var a = services("book",{emId:"51677488",band:"e6",bookDate:"07/09/2019"})
+     if(a.status == "w"){
+       console.log(this.state);
+     }
+     function services(type,data){
+       if(type == "book"){
+         return {
+           status:"w",
+           slotNo:null,
+           date:null,
+           msg:null
+         }
+         let url = ""
+         return fetch(url)
+         .then(function(response) {
+           return response.json()
+         })
+         .then(function(data) {
+           return data
+         })
+         .catch(function(err){
+           const error = {
+             "error":err
+           }
+           console.log("Error in network call", err);
+           return error
+         });
+       }
+     }
+   }
+
   service = {
     "fetchPost":(config)=>{
       // return Buffer;
@@ -118,7 +151,7 @@ class NewsBox extends React.Component{
     return(
       <div className="news-board">
         {this.state.buffer.articles.map((o,i) => {
-          return <Card  key={i} article={o}/>
+          return <Card  key={i} article={o} handleBookSubmit = {this.handleBookSubmit} state={this.state}/>
         })}
       </div>
     )
