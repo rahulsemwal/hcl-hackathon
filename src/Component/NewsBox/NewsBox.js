@@ -11,7 +11,12 @@ class NewsBox extends React.Component{
     super(props);
     this.apiProvider = new ApiProvider()
     this.state = {
-      "buffer": {"articles":[]},
+      "buffer": {"articles":[{
+        "step":0,
+        "empId":"51766488",
+        "band":"e6",
+        "bookDate":""
+        }]},
       "updateCounter":0,
     }
   }
@@ -26,7 +31,7 @@ class NewsBox extends React.Component{
   // }
   componentDidMount(){
     console.log("inside componentDidMount, called first time only after render")
-    this.methods.engine("play",this.state)
+    // this.methods.engine("play",this.state)
   }
   componentWillUnmount(){
     // console.log("inside willUnMount, called when component expires")

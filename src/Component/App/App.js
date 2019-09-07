@@ -3,7 +3,6 @@ import './App.css'
 import Nav from '../Nav/Nav'
 import NoNetworkFound from '../NoNetworkFound/NoNetworkFound'
 import NewsBox from '../NewsBox/NewsBox'
-// import FoodBox from "../FoodBox/FoodBox"
 
 class App extends Component{
   constructor(){
@@ -31,11 +30,9 @@ class App extends Component{
   render(){
     return(
       <div className="App">
-        <h1>Hitme.com {this.state.updateCounter}</h1>
-        <Nav/>
+        <h1>HCL Car Parking Mgmt. {this.state.updateCounter}</h1>
         {this.state.offline?null:<NoNetworkFound/>}
         <NewsBox updateCounter = {this.state.updateCounter}/>
-        {/*<FoodBox/>*/}
       </div>
     );
   }
