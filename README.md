@@ -82,23 +82,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 ### TASK - Phase 1
-- No network found tile responsive - done
-- React work flow for adding multiple API's and making a common JSON filter for all API's. - Almost Done
-- lazy loading
-- service worker for offline concept
-- History API - https://love2dev.com/blog/google-lazy-load-seo/
 
-### TASK - Phase 2
-- Go inside the detail page of tile
-- No network found for detail page
-- React routing and workflow, making common JSON architecture
-- lazy loading and code splitting
-- Code Splitting - react lazy load components
-- Service worker if need, less priority
-- History API
 
-### TASK - Phase 3
--Integrating python to it
--https://medium.com/@pranayaryal/how-to-run-flask-and-react-together-6e7c773b54d
-- Making Brain Class
--
+# hcl-hackathon
+Hackathon event organised by HCL technologies noida. we built an personal assistant for car parking lottery system.
